@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent-animation{
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.child-animation{
+    padding: 10px 30px 10px 30px;
+    display: inline-block;
+    box-shadow: 0px 0px 30px 5px rgb(114, 111, 178);
+    font-size: 45px;
+    color: rgb(24, 145, 145);
+}
+
+.parent-flex{
+    padding-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.child-flex{
+    box-shadow: 0px 0px 30px 5px rgb(41, 33, 203);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(94, 255, 0);
+    color: white;
+    font-size: 25px;
+}
+
+.child-flex-1{
+    box-shadow: 0px 0px 30px 5px rgb(32, 191, 45);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 149, 0);
+    color: white;
+    font-size: 25px;
+}
+
+
+.child-flex-2{
+    box-shadow: 0px 0px 30px 5px rgb(119, 7, 87);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 140);
+    color: white;
+    font-size: 25px;
+}
+
+
+.child-flex:hover{
+    rotate: 360deg;
+    transition: 1s;
+    width: 130px;
+    height: 130px;
+    background-color: aqua;
+}
+
+.child-flex-1:hover{
+    transition-timing-function: ease-in-out;
+    transition: 2s;
+    width: 130px;
+    height: 200px;
+    background-color: green;
+}
+
+
+.child-flex-2:hover{
+    transform: scale(1.5);
+    background-color: blueviolet;
+    transition: 2s;
+    width: 130px;
+    height: 130px;
+} 
+
+
+
+.parent-key-frame{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.child-key-frame{
+    margin-top: 100px;
+    position: relative;
+    width: 150px;
+    height: 70px;
+    background-color: aqua;
+    color: red;
+    animation: mymove 2s  infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.child-key-frame-2{
+    margin-top: 100px;
+    position: relative;
+    width: 150px;
+    height: 70px;
+    background-color: aqua;
+    color: red;
+    animation: mymove2 2s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+@keyframes mymove {
+  0%{
+    left: 0;
+  }
+  50%{
+    color: white;
+    background-color: blue;
+    left: 350px;
+    rotate: 180deg;
+    font-size: 25px;
+  }
+  100%{
+    font-size: 25px;
+    color: white;
+    background-color: brown;
+    left: 700px;
+    rotate: -360deg;
+  }
+}
+
+
+@keyframes mymove2 {
+    0%{
+      right: 0;
+    }
+    50%{
+      color: white;
+      background-color: rgb(0, 255, 115);
+      right: 350px;
+      rotate: -180deg;
+      font-size: 25px;
+    }
+    100%{
+      font-size: 25px;
+      color: white;
+      background-color: rgb(212, 25, 212);
+      right: 700px;
+      rotate: 360deg;
+    }
+  }
+
+
+  a{
+    color: white;
+    font-size: 20px;
+  }
+
+
+  footer{
+    padding-bottom: 70px;
+    padding-top: 100px;
+    background-color: rgb(36, 34, 34);
+    margin-top: 200px;
+  }
+
+  .logo{
+    color: white;
+    font-size: 35px;
+  }
+
+
+.footer-parent{
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.footer-parent div{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-parent div a{
+  padding: 4px;
+}
+
+
+.parent-div-line{ 
+    margin-top: 70px;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.div-line{
+    width: 82%;
+    height: 1px;
+    background-color: azure;
+}
+
+
+.icon-parent{
+  padding: 10px;
+  justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.icon-parent div{
+  margin: 5px;
+  border-radius: 50%;
+  border: 1px solid white;
+ 
+}
+
+
+.icon-parent div i{
+  color: white; 
+  padding: 15px;
+}
+
+
+.copy-right{
+  display: flex;
+  justify-content: center;
+}
+
+.copy-right p{
+  color: white;
+  font-size: 22px;
+  padding: 10px;
+}
+
+
+
+@media only screen and (max-width:1024px){
+  .footer-parent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
